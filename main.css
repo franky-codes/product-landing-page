@@ -1,0 +1,298 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+/* Fonts End */
+body {
+  font-family: Raleway, sans-serif;
+}
+
+/* Header Style */
+#header {
+  width: 100%;
+  height: 80px;
+  color: #37474F;
+  background-color: #ffffff;
+  padding: 20px 20px 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+#header-img {
+  width: 65px;
+  height: 65px;
+ margin-bottom: 15px;
+}
+
+h1 {
+  font-family: Satisfy, cursive;
+  font-size: 30px;
+  display: inline;
+  margin-left: 20px;
+}
+
+#nav-bar {
+  display: flex;
+  width: 45%;
+  margin-left: 300px;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: #37474F;
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1.75px;
+}
+.nav-link:hover {
+  color:#B0BEC5;
+} 
+/*Header Style End */
+
+/* Banner Style */
+#banner {
+  width: 100%;
+  height: 265px;
+  margin-top:110px;
+  display: block;
+  overflow: hidden;
+}
+
+#banner-img {
+  width: 100%;
+  height: 99.9%;
+  display: block;
+  object-fit: cover;
+}
+/* Banner Style End */
+/* Featured video style */
+#video-wrapper {
+  max-width: 100%;
+  height: auto;
+  background-color: #EFEBE9;
+  padding-bottom: 30px;
+}
+.logo-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 90px;
+}
+.section-title {
+  text-align: center;
+  font-weight: 100;
+  font-size: 27px;
+  color: #37474F;
+  margin-top: 25px;
+  margin-bottom: 70px;
+}
+ #video { 
+  width: 560px;
+  height: 315px; 
+  margin: 30px 45px ;
+}
+
+h3 {
+  font-size: 35px
+}
+
+#script {
+  font-family: Satisfy, cursive;
+}
+#video-description {
+  max-width: 45%;
+  background-color:none;
+  display: inline-block; 
+  margin-right: 30px;
+  position: relative;
+  z-index: 1;
+}
+#featured-button {
+  margin-left: 185px;
+  margin-top: 10px;
+}
+/*Featured video style end*/
+
+.book-now-button {
+  font-family: Raleway, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  height: 40px;
+  width: 120px;
+  color: white;
+  background-color: #1EB1BE;
+  cursor: pointer;
+  margin: 20px;
+}
+
+/* Travel Options Style */
+#travel-options-wrapper {
+  max-width: 100%;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+
+#grid-container {
+  max-width: 100%;
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template: repeat(4, auto) / repeat(3, 250px);
+  justify-content: center;
+  column-gap: 75px
+}
+
+.destination {
+  text-align: center;
+  font-family: Satisfy, cursive;
+  font-size: 28px;
+}
+
+#img1 {
+  grid-column: 1 / 2;
+}
+
+#img2 {
+  grid-column: 2 / 3;
+}
+
+#img3 {
+  grid-column: 3 / 4;
+}
+
+#beach-getaway {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#mtn-retreat {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#desert-oasis {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+#text1 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+#text2 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+#text3 {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+/* End Travel Options Style */
+
+/* Form Style */
+#form-wrapper {
+  max-width: 100%;
+  height: auto;
+  background-color: #EFEBE9;
+  padding-bottom: 30px;
+  margin-top: 50px;
+} 
+
+#deals-blurb {
+  max-width: 400px;
+  margin: 0 auto;
+ line-height: 1.5em
+}
+
+#email {
+  height: 34px;
+  width: 220px;
+  margin-left: 440px;
+  margin-top: 45px;
+}
+#submit {
+  margin-left: 10px;
+}
+
+#footer {
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+}
+/* End Form Style */
+@media screen and (max-width: 1100px) {
+  
+  #nav-bar {
+    
+    margin-left: 100px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  #video {
+    display: block;
+    margin: 0 auto;
+  }
+  #video-description {
+    display: block;
+    margin: 0 auto;
+  }
+  #featured-button {
+    display: block;
+    margin: 0 auto;
+  }
+  #grid-container {
+    grid-column-gap: 10px;
+  }
+  #deals-blurb {
+    text-align: center;
+  }
+  #email {
+    display: block;
+    margin:0 auto;
+    margin-top: 10px;
+  }
+  #submit {
+    display: block;
+    margin:0 auto;
+    margin-top: 10px;
+  }
+}
+
+ @media screen and (max-width: 600px) {
+  #nav-bar {
+    margin-right: 50px;
+    margin-left: 50px;
+    flex-direction: column;
+  }
+  .nav-link {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+   #header {
+     height: 150px;
+   }
+   #company-name {
+     display: none;
+   }
+} 
+   
+
+
+
+
+
+
+
+
+
